@@ -31,7 +31,7 @@ namespace CasaDoCodigo.Controllers
             {
                 pedidoRepository.AddItem(codigo);
             }
-            return View(pedidoRepository.GetPedido());
+            return View(pedidoRepository.GetPedido().Itens);
         }
 
         public IActionResult Resumo()
