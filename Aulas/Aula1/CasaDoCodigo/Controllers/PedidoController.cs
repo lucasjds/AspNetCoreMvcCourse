@@ -36,7 +36,8 @@ namespace CasaDoCodigo.Controllers
 
         public IActionResult Resumo()
         {
-            return View();
+
+            return View(pedidoRepository.GetPedido());
         }
 
         public IActionResult Cadastro()
